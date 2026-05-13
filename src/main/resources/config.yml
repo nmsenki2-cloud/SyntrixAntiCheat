@@ -1,0 +1,58 @@
+prefix: "&8[&bGuardAC&8]&r"
+
+alerts:
+  enabled: true
+  log-to-console: true
+
+punishments:
+  kick-threshold: 25
+  ban-threshold: 60
+  ban-command: "ban {player} GuardAC: Cheat detected [{check}]"
+
+checks:
+  speed:
+    enabled: true
+    max-speed: 0.36
+
+  flight:
+    enabled: true
+    max-air-ticks: 10
+
+  killaura:
+    enabled: true
+
+  reach:
+    enabled: true
+    max-distance: 3.2
+
+  nofall:
+    enabled: true
+
+  timer:
+    enabled: true
+    max-packets-per-second: 22
+
+  scaffold:
+    enabled: true
+
+  autoclicker:
+    enabled: true
+    max-cps: 16
+
+  blink:
+    enabled: true
+    max-position-diff: 10.0
+
+  velocity:
+    enabled: true
+    min-knockback-factor: 0.6
+
+  phase:
+    enabled: true
+
+  inventory:
+    enabled: true
+
+  aimbot:
+    enabled: true
+    max-rotation-speed: 180.0
