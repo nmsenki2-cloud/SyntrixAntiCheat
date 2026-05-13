@@ -1,0 +1,26 @@
+name: GuardAC
+version: 1.0
+main: hu.guardac.GuardAC
+api-version: 1.20
+depend: [packetevents]
+description: Professional Anticheat Plugin
+
+commands:
+  guardac:
+    description: GuardAC parancsok
+    usage: /guardac <alerts|verbose|bypass|kick|info|reset>
+    aliases: [gac, ac]
+
+permissions:
+  guardac.alerts:
+    description: Alert üzenetek látása
+    default: op
+  guardac.verbose:
+    description: Részletes log
+    default: op
+  guardac.bypass:
+    description: Bypass beállítása
+    default: op
+  guardac.kick:
+    description: Kick és reset
+    default: op
