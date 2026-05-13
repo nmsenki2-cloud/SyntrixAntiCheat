@@ -1,5 +1,6 @@
 package hu.guardac;
 
+import com.github.retrooper.packetevents.PacketEvents;
 import hu.guardac.manager.AlertManager;
 import hu.guardac.manager.CheckManager;
 import hu.guardac.command.GuardCommand;
@@ -21,7 +22,8 @@ public class GuardAC extends JavaPlugin {
         this.alertManager = new AlertManager(this);
         this.checkManager = new CheckManager(this);
 
-        getServer().getPluginManager().registerEvents(new PacketListener(this), this);
+        PacketEvents.getAPI().getEventManager().registerListener(new PacketListener(this));
+        PacketEvents.getAPI().init();
 
         getCommand("guardac").setExecutor(new GuardCommand(this));
 
@@ -30,6 +32,7 @@ public class GuardAC extends JavaPlugin {
 
     @Override
     public void onDisable() {
+        PacketEvents.getAPI().terminate();
         getLogger().info("GuardAC leállt.");
     }
 
