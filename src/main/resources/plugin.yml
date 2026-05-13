@@ -1,9 +1,10 @@
 name: GuardAC
 version: 1.0
 main: hu.guardac.GuardAC
-api-version: 1.21
-depend: [packetevents]
+api-version: "1.21"
+author: nmsenki2-cloud
 description: Professional Anticheat Plugin
+depend: [packetevents]
 
 commands:
   guardac:
