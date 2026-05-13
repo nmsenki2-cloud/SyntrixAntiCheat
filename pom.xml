@@ -18,7 +18,7 @@
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
         <repository>
-            <id>codemc-repo</id>
+            <id>codemc-releases</id>
             <url>https://repo.codemc.io/repository/maven-releases/</url>
         </repository>
     </repositories>
@@ -30,8 +30,8 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>io.github.retrooper</groupId>
-            <artifactId>packetevents-spigot</artifactId>
+            <groupId>com.github.retrooper.packetevents</groupId>
+            <artifactId>spigot</artifactId>
             <version>2.3.0</version>
             <scope>provided</scope>
         </dependency>
